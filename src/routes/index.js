@@ -14,8 +14,6 @@ const router = createRouter({
     routes: routes
 })
 
-router.push(PAGE_LINK.Main);
-
 export default router;
 
 
