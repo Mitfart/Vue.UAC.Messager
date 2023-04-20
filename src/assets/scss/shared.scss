@@ -1,0 +1,53 @@
+@use "@/assets/scss/_vars.scss";
+
+.container {
+  max-width: vars.$max-page-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.container_content { max-width: vars.$max-content-width; }
+.container_sidebar { max-width: vars.$max-sidebar-width; }
+
+.block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  padding: 1rem;
+  border-radius: 1rem;
+
+  background-color: vars.$c-neutral;
+}
+
+.icon {
+  width: 1.25em;
+}
+
+.icon,
+.rect {
+  &:before {
+    content: '';
+    float: right;
+    padding-bottom: 100%;
+  }
+}
+.rect_2-1:before { padding-bottom: 50%; }
+.rect_3-1:before { padding-bottom: 33.33%; }
+.rect_4-1:before { padding-bottom: 25%; }
+.rect_5-1:before { padding-bottom: 20%; }
+.rect_6-1:before { padding-bottom: 17.5%; }
+
+
+
+* { transition: .25s ease; }
+svg { transition: none; }
+
+#app {
+  font-family: vars.$f-family;
+  font-size: vars.$f-size;
+  color: vars.$c-second;
+
+  background-color: rgba(vars.$c-second-rgb, .125);
+
+  min-height: 100vh;
+}
