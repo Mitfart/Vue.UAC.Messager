@@ -1,12 +1,12 @@
 import { createWebHistory, createRouter } from "vue-router";
 import AppDefault from "@/layouts/AppLayoutDefault.vue";
-import PAGE_LINk from "@/pages/PAGE_LINK";
+import PAGE_LINK from "@/pages/PAGE_LINK";
 
 const routers = [
-    NewRouter(PAGE_LINk.Main,       () => import('@/pages/MainPage.vue'),        { layout: AppDefault }),
-    NewRouter(PAGE_LINk.Account,    () => import('@/pages/AccountPage.vue'),     { layout: AppDefault }),
-    NewRouter(PAGE_LINk.SinglePost, () => import('@/pages/PostPage.vue'),        { layout: AppDefault }),
-    NewRouter(PAGE_LINk.CreatePost, () => import('@/pages/PublishPostPage.vue'), { layout: AppDefault }),
+    NewRouter(PAGE_LINK.Main,       () => import('@/pages/MainPage.vue'),        { layout: AppDefault }),
+    NewRouter(PAGE_LINK.Account,    () => import('@/pages/AccountPage.vue'),     { layout: AppDefault }),
+    NewRouter(PAGE_LINK.SinglePost, () => import('@/pages/PostPage.vue'),        { layout: AppDefault }),
+    NewRouter(PAGE_LINK.CreatePost, () => import('@/pages/PublishPostPage.vue'), { layout: AppDefault }),
 ]
 
 const router = createRouter({

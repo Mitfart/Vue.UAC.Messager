@@ -16,6 +16,8 @@ defineProps({
 
 
 <style scoped lang="scss">
+@use "@/assets/scss/_vars.scss";
+
 .user {
   &__avatar {
     width: 2.5rem;
@@ -29,6 +31,8 @@ defineProps({
     overflow: hidden;
 
     cursor: pointer;
+
+    background-color: vars.$c-neutral;
 
     & > .img {
       width: 100%;

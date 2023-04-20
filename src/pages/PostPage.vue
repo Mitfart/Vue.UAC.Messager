@@ -11,15 +11,14 @@
 
 <script setup>
 import PostMax from "@/components/Post/PostMax.vue";
-import MainHeader from "@/components/Main/MainHeader.vue";
+import AppLayoutDefault from "@/layouts/AppLayoutDefault.vue";
 
 import Post from "@/structs/Post";
 import User from "@/structs/User";
-import AppLayoutDefault from "@/layouts/AppLayoutDefault.vue";
-import image1 from "@/assets/img/1.jpg";
-import image2 from "@/assets/img/2.webp";
-import image3 from "@/assets/img/3.webp";
 import DataComment from "@/structs/DataComment";
+
+import placeholder from "@/assets/img/placeholder.webp";
+import placeholder_user from "@/assets/img/placeholder_user.png";
 
 
 const activeUser = DefaultUser();
@@ -41,9 +40,9 @@ function DefaultPost() {
         "Dick"
       ],
       [
-        image1,
-        image2,
-        image3
+        placeholder,
+        placeholder,
+        placeholder
       ],
       [
         DefaultComment([
@@ -95,7 +94,7 @@ function DefaultComment(comments) {
 function DefaultUser() {
   return new User(
       "Some",
-      image1,
+      placeholder_user,
       "#",
       12000);
 }

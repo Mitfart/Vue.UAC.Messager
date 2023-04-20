@@ -2,14 +2,14 @@
   <header class="header">
     <div class="container header__container">
       <div class="header__logo logo">
-        <RouterLink :to="PAGE_LINk.Main"><IconLogo/></RouterLink>
+        <RouterLink :to="PAGE_LINK.Main"><IconLogo/></RouterLink>
       </div>
 
       <SearchField/>
 
       <nav class="header__user-container">
-        <RouterLink :to="PAGE_LINk.CreatePost"><IconBell/></RouterLink>
-        <RouterLink :to="PAGE_LINk.Account"><IconUser/></RouterLink>
+        <RouterLink :to="PAGE_LINK.CreatePost"><IconBell/></RouterLink>
+        <RouterLink :to="PAGE_LINK.Account"><IconUser/></RouterLink>
       </nav>
     </div>
   </header>
@@ -21,7 +21,7 @@ import SearchField from '@/components/form/fields/SearchField.vue';
 import IconLogo from "@/icons/IconLogo.vue";
 import IconBell from "@/icons/IconBell.vue";
 import IconUser from "@/icons/IconUser.vue";
-import PAGE_LINk from "@/pages/PAGE_LINK";
+import PAGE_LINK from "@/pages/PAGE_LINK";
 </script>
 
 

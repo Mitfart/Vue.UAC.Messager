@@ -39,19 +39,19 @@ import Post from "@/structs/Post";
 import Theme from "@/structs/Theme";
 import Contact from "@/structs/Contact";
 import DataComment from "@/structs/DataComment";
-
-import image1 from "@/assets/img/1.jpg";
-import image2 from "@/assets/img/2.webp";
-import image3 from "@/assets/img/3.webp";
 import Recommend from "@/structs/Recommend";
+
+import placeholder from "@/assets/img/placeholder.webp";
+import placeholder_user from "@/assets/img/placeholder_user.png";
+
 
 
 const activeUser = DefaultUser();
 
 const activeTabIndex = 0;
 const tabs = [
-  new Tab("Рекомендации", "#"),
-  new Tab("Подписки", "#")
+  new Tab("Recommendations", "#"),
+  new Tab("Subscribes", "#")
 ]
 
 const posts = [
@@ -93,12 +93,12 @@ function DefaultPost() {
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque eius et facere fuga",
       [
         "Some",
-        "Dick"
+        "Tag"
       ],
       [
-        image1,
-        image2,
-        image3
+        placeholder,
+        placeholder,
+        placeholder
       ],
       [
         DefaultComment([
@@ -150,7 +150,7 @@ function DefaultComment(comments) {
 function DefaultUser() {
   return new User(
       "Some",
-      image1,
+      placeholder_user,
       "#",
       12000);
 }
@@ -158,14 +158,14 @@ function DefaultUser() {
 
 function DefaultContact() {
   return new Contact(
-      "Some GAY-SHIT",
-      "some_gay-shiy@gayverse.com");
+      "Some Contact",
+      "some@contact.com");
 }
 
 
 function DefaultTheme() {
   return new Theme(
-      "Хватит_хуи_пинать",
+      "Example theme",
       "#")
 }
 </script>

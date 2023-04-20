@@ -23,7 +23,7 @@
         <div class="post__media-container">
           <div class="post__media rect"
                v-for="file in data.media">
-            <img :src=file alt="ERROR">
+            <img :src="file" alt="ERROR">
           </div>
         </div>
       </div>

@@ -31,9 +31,8 @@ import PostDefault from "@/components/Post/PostDefault.vue";
 import SidebarMain from '@/components/Sidebar/SidebarMain.vue';
 import SidebarRecommendations from "@/components/Sidebar/Recomends/SidebarRecomends.vue";
 
-import image1 from "@/assets/img/1.jpg";
-import image2 from "@/assets/img/2.webp";
-import image3 from "@/assets/img/3.webp";
+import placeholder from "@/assets/img/placeholder.webp";
+import placeholder_user from "@/assets/img/placeholder_user.png";
 
 import User from "@/structs/User";
 import Post from "@/structs/Post";
@@ -50,6 +49,12 @@ const tabs = [
   new Tab("Посты", "#"),
   new Tab("Избранное", "#"),
   new Tab("Комментарии", "#"),
+]
+
+const posts = [
+  DefaultPost(),
+  DefaultPost(),
+  DefaultPost(),
 ]
 
 const recommendedPosts = [
@@ -74,9 +79,9 @@ function DefaultPost() {
         "Dick"
       ],
       [
-        image1,
-        image2,
-        image3
+        placeholder,
+        placeholder,
+        placeholder
       ],
       [
         DefaultComment([
@@ -99,7 +104,7 @@ function DefaultComment(comments) {
 function DefaultUser() {
   return new User(
       "Some",
-      image1,
+      placeholder_user,
       "#",
       12000);
 }

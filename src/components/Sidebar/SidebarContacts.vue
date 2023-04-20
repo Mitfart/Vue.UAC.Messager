@@ -1,7 +1,7 @@
 <template>
   <section class="contacts">
     <h1 class="sidebar__title">
-      Контакты
+      Contacts
     </h1>
 
     <div class="contact"

@@ -23,7 +23,7 @@
     </div>
 
     <TextBtn class="sidebar__btn" @click="Dummy">
-      Подробнее
+      more...
     </TextBtn>
   </section>
 </template>
