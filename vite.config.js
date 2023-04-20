@@ -11,6 +11,6 @@ export default defineConfig({
     }
   },
   publicPath: process.env.NODE_ENV === 'production'
-      ? 'Vue.UAC.Messager/'
+      ? '/Vue.UAC.Messager/'
       : '/'
 })
